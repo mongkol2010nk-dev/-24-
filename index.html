@@ -255,7 +255,6 @@
   <div class="grid-item">ชัยนาท</div>
   <div class="grid-item">สิงห์บุรี</div>
 </div>
-
 <h3 class="vivid-red medium">ภาคตะวันออก</h3>
 <div class="grid-container">
   <div class="grid-item">ชลบุรี</div>
@@ -376,62 +375,6 @@
 
 </body>
 </html>
-
-
-<!DOCTYPE html>
-<html lang="th">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>หน้าแรก</title>
-<style>
-    body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-    }
-    /* Section พื้นหลัง */
-    .hero {
-        height: 100vh; /* เต็มจอ */
-        background: url('bg1.jpg') no-repeat center center/cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
-        font-size: 32px;
-        font-weight: bold;
-        position: relative;
-    }
-
-    /* ทำให้สไลด์เปลี่ยนภาพ */
-    @keyframes slideBg {
-        0%  { background-image: url('https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1000006612-1.jpg?w=1024'); }
-        33%  { background-image: url('https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1000006610-2.jpg?w=1024'); }
-        66%  { background-image: url('https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1000006611-1.jpg?w=1024'); }
-        100% { background-image: url('https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1756910446911.jpg?w=1024'); }
-        {
-
-    .hero {
-        animation: slideBg 15s infinite;
-    }
-
-    /* ส่วนคอนเทนต์อื่น */
-    .content {
-        padding: 2px;
-        text-align: center;
-    }
-</style>
-</head>
-<body>
-
-<!-- พื้นหลังสไลด์ (หน้าหลัก) -->
-<section class="hero">
-    <div>
-        <h1>TAXI ON TOUR</h1>
-        <p>บริการรถเช่าพร้อมคนขับทั่วไทย</p>
-    </div>
-</section>
 
 <!-- คอนเทนต์ต่อจากพื้นหลัง -->
 <div class="content">
@@ -584,9 +527,149 @@
 </body>
 </html>
 
+</body>
+</html>
+
+
 <!-- เสียงประกอบคลาสสิก -->
 <audio id="bg-music" autoplay loop controls style="position:fixed; bottom:20px; right:40px; z-index:999;">
   <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
   เบราว์เซอร์ของคุณไม่รองรับการเล่นเสียง
 </audio>
 
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>หน้าแรก</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    /* Section พื้นหลัง */
+    .hero {
+        height: 100vh; /* เต็มจอ */
+        background: url('bg1.jpg') no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        position: relative;
+    }
+
+    /* ทำให้สไลด์เปลี่ยนภาพ */
+    @keyframes slideBg {
+        0%   { background-image: url('https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1000006612-1.jpg?w=900'); }
+        33%  { background-image: url('https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1000006610-2.jpg?w=900'); }
+        66%  { background-image: url('https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1000006611-1.jpg?w=900'); }
+        100% { background-image: url('https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1756910446911.jpg?w=900'); }
+    }
+
+    .hero {
+        animation: slideBg 15s infinite;
+    }
+
+    /* ส่วนคอนเทนต์อื่น */
+    .content {
+        padding: 2px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<!-- พื้นหลังสไลด์ (หน้าหลัก) -->
+<section class="hero">
+    <div>
+        <h1>TAXI ON TOUR</h1>
+        <p>บริการรถเช่าพร้อมคนขับทั่วไทย</p>
+    </div>
+</section>
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สไลด์รถพร้อมเสียงเปียโน</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+    .slider {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100vh;
+    }
+    .slides {
+      display: flex;
+      width: 300%; /* ถ้ามี 3 รูป */
+      height: 100%;
+      animation: slideAnim 15s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @keyframes slideAnim {
+      0%   { transform: translateX(0%); }
+      33%  { transform: translateX(-100%); }
+      66%  { transform: translateX(-200%); }
+      100% { transform: translateX(0%); }
+    }
+    /* ปุ่มควบคุมเสียง */
+    .audio-control {
+      position: fixed;
+      bottom: 100px;
+      right: 5px;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slider">
+    <div class="slides">
+      <img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1000006612-1.jpg?w=1024" alt="รถ 1">
+      <img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1000006610-2.jpg?w=1024" alt="รถ 2">
+      <img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/08/1000006611-1.jpg?w=1024" alt="รถ 3">
+    </div>
+  </div>
+
+  <!-- เสียงเปียโนพื้นหลัง -->
+  <div class="audio-control">
+    <audio id="bg-piano" autoplay loop>
+      <source src="https://assets.mixkit.co/music/preview/mixkit-soft-piano-ambient-689.mp3" type="audio/mpeg">
+      เบราว์เซอร์ของคุณไม่รองรับการเล่นเสียง
+    </audio>
+    <!-- ปุ่มเปิด/ปิดเสียง -->
+    <button id="btn-toggle" style="padding:8px 12px; font-size:14px;">ปิดเสียง</button>
+  </div>
+
+  <script>
+    const audio = document.getElementById('bg-piano');
+    const btn = document.getElementById('btn-toggle');
+
+    btn.addEventListener('click', function() {
+      if (audio.paused) {
+        audio.play();
+        btn.textContent = 'ปิดเสียง';
+      } else {
+        audio.pause();
+        btn.textContent = 'เปิดเสียง';
+      }
+    });
+  </script>
+
+</body>
+</html>
