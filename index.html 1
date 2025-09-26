@@ -1,0 +1,73 @@
+<!-- ปุ่มเปิดฟอร์มจอง -->
+<button onclick="document.getElementById('bookingPopup').style.display='block'" 
+        style="background:#d32f2f; color:#fff; border:none; padding:10px 20px; border-radius:8px; cursor:pointer;">
+  จองรถเช่าพร้อมคนขับ
+</button>
+
+<!-- Pop Up Booking Form -->
+<div id="bookingPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000;">
+  <div style="background:#fff; margin:40px auto; padding:20px; border-radius:12px; max-width:800px; position:relative;">
+    <!-- ปุ่มปิด -->
+    <span onclick="document.getElementById('bookingPopup').style.display='none'" 
+          style="position:absolute; top:10px; right:15px; font-size:22px; cursor:pointer; color:#d32f2f;">&times;</span>
+
+    <!-- Booking Form Section -->
+    <section style="padding:20px;">
+      <h2 style="text-align:center; color:#d32f2f; margin-bottom:10px;">
+        แบบฟอร์มจองรถเช่าพร้อมคนขับ
+      </h2>
+      <h3 style="text-align:center; font-weight:normal; margin-bottom:20px;">
+        กรอกข้อมูลด้านล่างเพื่อส่งการจองผ่าน LINE
+      </h3>
+
+      <form action="mailto:mongkol2010nk@gmail.com" method="post" enctype="text/plain" style="width:100%;">
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+          <tr>
+            <th style="text-align:left; padding:8px; width:30%; background:#eee;">ชื่อผู้จอง</th>
+            <td style="padding:8px;"><input type="text" name="ชื่อผู้จอง" required style="width:95%; padding:6px; border-radius:6px; border:1px solid #ccc;"></td>
+          </tr>
+          <tr>
+            <th style="text-align:left; padding:8px; background:#eee;">เบอร์โทร</th>
+            <td style="padding:8px;"><input type="tel" name="เบอร์โทร" required style="width:95%; padding:6px; border-radius:6px; border:1px solid #ccc;"></td>
+          </tr>
+          <tr>
+            <th style="text-align:left; padding:8px; background:#eee;">จังหวัด</th>
+            <td style="padding:8px;"><input type="text" name="จังหวัด" required style="width:95%; padding:6px; border-radius:6px; border:1px solid #ccc;"></td>
+          </tr>
+          <tr>
+            <th style="text-align:left; padding:8px; background:#eee;">ประเภทรถ</th>
+            <td style="padding:8px;"><input type="text" name="ประเภทรถ" required style="width:95%; padding:6px; border-radius:6px; border:1px solid #ccc;"></td>
+          </tr>
+          <tr>
+            <th style="text-align:left; padding:8px; background:#eee;">จำนวนผู้โดยสาร</th>
+            <td style="padding:8px;"><input type="number" name="จำนวนผู้โดยสาร" required style="width:95%; padding:6px; border-radius:6px; border:1px solid #ccc;"></td>
+          </tr>
+          <tr>
+            <th style="text-align:left; padding:8px; background:#eee;">วันที่จอง</th>
+            <td style="padding:8px;"><input type="date" name="วันที่จอง" required style="width:95%; padding:6px; border-radius:6px; border:1px solid #ccc;"></td>
+          </tr>
+          <tr>
+            <th style="text-align:left; padding:8px; background:#eee;">เวลา</th>
+            <td style="padding:8px;"><input type="time" name="เวลา" required style="width:95%; padding:6px; border-radius:6px; border:1px solid #ccc;"></td>
+          </tr>
+          <tr>
+            <th style="text-align:left; padding:8px; background:#eee;">หมายเหตุ</th>
+            <td style="padding:8px;"><textarea name="หมายเหตุ" style="width:95%; padding:6px; border-radius:6px; border:1px solid #ccc;"></textarea></td>
+          </tr>
+        </table>
+
+        <!-- ปุ่มส่งจองและเพิ่มเพื่อน LINE -->
+        <div style="text-align:center; margin-top:15px;">
+          <button type="submit" style="background:#d32f2f; color:#fff; border:none; padding:10px 20px; border-radius:8px; font-size:16px; cursor:pointer; margin-right:10px;">
+            ส่งการจอง
+          </button>
+
+          <a href="https://lin.ee/sIiHaHu" target="_blank" 
+             style="display:inline-flex; align-items:center; background:#06C755; color:white; text-decoration:none; padding:10px 15px; border-radius:8px; font-weight:bold; font-size:16px;">
+            เพิ่มเพื่อน LINE
+          </a>
+        </div>
+      </form>
+    </section>
+  </div>
+</div>
